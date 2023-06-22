@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
+import 'package:music_player/Controllers/providers/variable_provider.dart';
 import 'package:provider/provider.dart';
-import '../../../controller/provider/variable_provider.dart';
 import '../../../utils/list.dart';
 
 class DetailsPage extends StatefulWidget {
@@ -19,19 +19,19 @@ class _DetailsPageState extends State<DetailsPage> {
         .songModel
         .assetsAudioPlayer
         .open(
-      Audio(allSongs[index]['song']),
-      showNotification: true,
-      loopMode: LoopMode.playlist,
-      autoStart: Provider.of<SongProvider>(context, listen: false)
-          .songModel
-          .isPlay,
-    );
+          Audio(allSongs[index]['song']),
+          showNotification: true,
+          loopMode: LoopMode.playlist,
+          autoStart: Provider.of<SongProvider>(context, listen: false)
+              .songModel
+              .isPlay,
+        );
   }
 
   @override
   Widget build(BuildContext context) {
     Map<String, dynamic> data =
-    ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
 
     return Scaffold(
       appBar: AppBar(
@@ -49,11 +49,11 @@ class _DetailsPageState extends State<DetailsPage> {
                     .currentPosition,
                 builder: (context, snapshot) {
                   Provider.of<SongProvider>(context)
-                      .songModel
-                      .currentSliderValue =
-                  (snapshot.data != null)
-                      ? snapshot.data!
-                      : const Duration(seconds: 0);
+                          .songModel
+                          .currentSliderValue =
+                      (snapshot.data != null)
+                          ? snapshot.data!
+                          : const Duration(seconds: 0);
 
                   try {
                     Provider.of<SongProvider>(context).songModel.totalDuration =
@@ -104,8 +104,8 @@ class _DetailsPageState extends State<DetailsPage> {
                               .songModel
                               .assetsAudioPlayer
                               .seek(
-                            Duration(seconds: val.toInt()),
-                          );
+                                Duration(seconds: val.toInt()),
+                              );
                         },
                       ),
                       Row(

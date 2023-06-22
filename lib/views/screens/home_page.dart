@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:music_booster/views/Components/audio/audio_page.dart';
+import 'package:music_player/views/Components/audio/audio_page.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
-import 'package:music_booster/views/Components/video/video_page.dart';
+import 'package:music_player/views/Components/video/video_page.dart';
 import 'package:provider/provider.dart';
 
-import '../../Controller/provider/notification_providert.dart';
-import '../../Controller/provider/profile_provider.dart';
+import '../../Controllers/providers/notification_provider.dart';
+import '../../Controllers/providers/profile_provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage>
                                     onPressed: () {
                                       setState(() {
                                         Provider.of<ProfileProvider>(context,
-                                            listen: false)
+                                                listen: false)
                                             .pickImage();
                                         Navigator.of(context).pop();
                                       });
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage>
                                     onPressed: () {
                                       setState(() {
                                         Provider.of<ProfileProvider>(context,
-                                            listen: false)
+                                                listen: false)
                                             .pickImage1();
                                         Navigator.of(context).pop();
                                       });
@@ -243,7 +243,7 @@ class _HomePageState extends State<HomePage>
                             .isNotification),
                         onChanged: (val) {
                           Provider.of<NotificationProvider>(context,
-                              listen: false)
+                                  listen: false)
                               .changeNotification();
                         },
                       ),

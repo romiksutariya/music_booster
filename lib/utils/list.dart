@@ -85,28 +85,33 @@ List<Map<String, dynamic>> allSongs = [
 
 List<Map<String, dynamic>> allVideos = [
   {
-    "image1": "assets/images/v1.jpg",
-    "video": "assets/video/v1.mp4",
-    "name1": "Uttrayan",
+    "image1": "assets/images/heer_ranjha.jpeg",
+    "video": "assets/video/khamma.mp4",
+    "name1": "heer ranjha",
   },
   {
-    "image1": "assets/images/v2.jpg",
-    "video": "assets/video/v2.mp4",
-    "name1": "Marraige",
+    "image1": "assets/images/khani_suno.jpeg",
+    "video": "assets/video/khamma.mp4",
+    "name1": "khani-suno",
   },
   {
-    "image1": "assets/images/v3.jpg",
-    "video": "assets/video/v3.mp4",
-    "name1": "Village",
+    "image1": "assets/images/malang_sjna.jpeg",
+    "video": "assets/video/khamma.mp4",
+    "name1": "malang_sjna",
   },
   {
-    "image1": "assets/images/v4.jpg",
-    "video": "assets/video/v4.mp4",
-    "name1": "Broo",
+    "image1": "assets/images/nadidosh2.jpg",
+    "video": "assets/video/khamma.mp4",
+    "name1": "khamma",
   },
   {
-    "image1": "assets/images/v5.jpg",
-    "video": "assets/video/v5.mp4",
-    "name1": "Village",
+    "image1": "assets/images/nathni image.jpg",
+    "video": "assets/video/khamma.mp4",
+    "name1": "nathni",
+  },
+  {
+    "image1": "assets/images/rbba_janda.jpeg",
+    "video": "assets/video/khamma.mp4",
+    "name1": "Rabba_janda",
   },
 ];

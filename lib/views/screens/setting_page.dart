@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../Controller/provider/theme_provider.dart';
+import '../../Controllers/providers/theme_provider.dart';
 
 class SettingPage extends StatefulWidget {
   const SettingPage({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class _SettingPageState extends State<SettingPage> {
             TextFormField(
               decoration: InputDecoration(
                 enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(50)
+                  borderRadius: BorderRadius.circular(50)
                 ),
                 prefixIcon: Icon(Icons.search,size: 30,),
                 hintText: "Enter Your Name...",

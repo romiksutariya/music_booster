@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:music_booster/utils/list.dart';
+import 'package:music_player/utils/list.dart';
 import 'package:provider/provider.dart';
-import '../../../Controller/provider/variable_provider.dart';
+import '../../../Controllers/providers/variable_provider.dart';
 
 class AudioPage extends StatefulWidget {
   const AudioPage({Key? key}) : super(key: key);
@@ -35,13 +35,13 @@ class _AudioPageState extends State<AudioPage> {
           items: images
               .map(
                 (e) => Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(e), fit: BoxFit.cover),
-                borderRadius: BorderRadius.circular(24),
-              ),
-            ),
-          )
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(e), fit: BoxFit.cover),
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                ),
+              )
               .toList(),
         ),
         SizedBox(

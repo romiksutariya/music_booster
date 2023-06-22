@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_booster/utils/list.dart';
+import 'package:music_player/utils/list.dart';
 import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
 

@@ -1,21 +1,21 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
-import 'package:music_booster/views/screens/home_page.dart';
-import 'package:music_booster/views/screens/setting_page.dart';
+import 'package:music_player/views/screens/home_page.dart';
+import 'package:music_player/views/screens/setting_page.dart';
 import 'package:provider/provider.dart';
-import 'package:music_booster/views/screens/splash_screen.dart';
-import 'package:music_booster/views/Components/audio/detail_page.dart';
+import 'package:music_player/views/screens/splash_screen.dart';
+import 'package:music_player/views/Components/audio/detail_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:music_booster/views/Components/video/vdodetail_page.dart';
-import 'Controller/provider/notification_providert.dart';
-import 'Controller/provider/profile_provider.dart';
-import 'Controller/provider/theme_provider.dart';
-import 'Controller/provider/variable_provider.dart';
+import 'package:music_player/views/Components/video/vdodetail_page.dart';
+import 'Controllers/providers/notification_provider.dart';
+import 'Controllers/providers/profile_provider.dart';
+import 'Controllers/providers/theme_provider.dart';
+import 'Controllers/providers/variable_provider.dart';
 import 'modals/notification_modal.dart';
 import 'modals/profile_modal.dart';
-import 'modals/theme_modal.dart';
+import 'modals/theme_modals.dart';
+import 'modals/variable.dart';
 import 'dart:io';
-import 'modals/variable_modal.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

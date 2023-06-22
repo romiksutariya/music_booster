@@ -1,6 +1,6 @@
 {
-    "name": "music_booster",
-    "short_name": "music_booster",
+    "name": "music_player",
+    "short_name": "music_player",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
